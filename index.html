@@ -978,88 +978,78 @@
 
 <!--publications-->
 <section class="faq section-padding">
-  <!-- Collapsible PDF Section -->
-<div class="container my-5" id="publications">
-  <h2>
-      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pdfSection">
-          Available eBooks 📚
-      </button>
-  </h2>
-  
-  <div class="collapse" id="pdfSection">
-      <div class="card card-body">
-          <div class="row">
-              <!-- PDF 1 -->
-              <div class="col-md-6 mb-3">
-                  <div class="card">
-                      <div class="card-body">
-                          <h5 class="card-title">Python Programming Guide</h5>
-                          <p class="text-muted">25,000 UGX</p>
-                          <button class="btn btn-success add-to-cart" data-book="Python Programming Guide">
-                              Add to Cart
-                          </button>
-                          <a href="python-guide.pdf" download class="btn btn-outline-primary">
-                              View Sample
-                          </a>
-                      </div>
-                  </div>
-              </div>
-              
-              <!-- PDF 2 -->
-              <div class="col-md-6">
-                  <div class="card">
-                      <div class="card-body">
-                          <h5 class="card-title">Web Development Basics</h5>
-                          <p class="text-muted">25,000 UGX</p>
-                          <button class="btn btn-success add-to-cart" data-book="Web Development Basics">
-                              Add to Cart
-                          </button>
-                          <a href="web-basics.pdf" download class="btn btn-outline-primary">
-                              View Sample
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+     <div class="container my-5">
+    <h2>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pdfSection">
+            Available eBooks 📚
+        </button>
+    </h2>
+    
+    <div class="collapse" id="pdfSection">
+        <div class="card card-body">
+            <div class="row">
+                <!-- PDF 1 -->
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Python Programming Guide</h5>
+                            <p class="text-muted">25,000 UGX</p>
+                            <button class="btn btn-success add-to-cart" data-book="Python Programming Guide">
+                                Add to Cart
+                            </button>
+                            <a href="python-guide.pdf" download class="btn btn-outline-primary">
+                                Download Sample
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PDF 2 -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development Basics</h5>
+                            <p class="text-muted">25,000 UGX</p>
+                            <button class="btn btn-success add-to-cart" data-book="Web Development Basics">
+                                Add to Cart
+                            </button>
+                            <a href="web-basics.pdf" download class="btn btn-outline-primary">
+                                Download Sample
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Cart -->
 <div class="cart-box">
-  <h5>Shopping Cart 🛒</h5>
-  <div id="cart-items"></div>
-  <p>Total: <span id="cart-total">0</span> UGX</p>
-  <button class="btn btn-warning btn-sm" onclick="completePurchase()">Complete Purchase</button>
-</div>
-
-<!-- Payment Modal -->
-<div class="modal fade" id="paymentModal">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title">Mobile Money Payment</h5>
-              <button class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-              <p>Total Amount: <span id="payment-amount"></span> UGX</p>
-              <div class="mb-3">
-                  <label>Mobile Money Number</label>
-                  <input type="tel" class="form-control" placeholder="Enter phone number">
-              </div>
-              <button class="btn btn-success">Confirm Payment</button>
-          </div>
-      </div>
-  </div>
-</div>
-<button class="cart-toggle-btn" onclick="toggleCart()">🛒</button>
-
-<div class="cart-box" id="cartBox">
-    <span class="close-cart" onclick="toggleCart()">&times;</span>
     <h5>Shopping Cart 🛒</h5>
     <div id="cart-items"></div>
     <p>Total: <span id="cart-total">0</span> UGX</p>
     <button class="btn btn-warning btn-sm" onclick="completePurchase()">Complete Purchase</button>
+</div>
+
+<!-- Payment Modal -->
+<div class="modal fade" id="paymentModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Mobile Money Payment</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Total Amount: <span id="payment-amount"></span> UGX</p>
+                <div class="mb-3">
+                    <label>Mobile Money Number</label>
+                    <input type="tel" class="form-control" placeholder="Enter phone number">
+                </div>
+                <button class="btn btn-success">Confirm Payment</button>
+            </div>
+        </div>
+    </div>
 </div>
 </section>
 
@@ -1131,7 +1121,7 @@
      <script src="js/custom.js"></script>
      <script>
       let cart = [];
-    const price = 25000;
+      const price = 25000;
 
     // Cart functionality
     document.querySelectorAll('.add-to-cart').forEach(button => {
