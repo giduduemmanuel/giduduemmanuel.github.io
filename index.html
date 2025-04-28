@@ -20,86 +20,7 @@
      <link rel="stylesheet" href="css/tooplate-emma-resume-style.css">
 
      <style>
-      .cart-toggle-btn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1001;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: #0d6efd;
-        color: white;
-        border: none;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-    
-    .cart-toggle-btn:hover {
-        background: #0b5ed7;
-        transform: scale(1.1);
-    }
 
-    .cart-box {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1002;
-        background: white;
-        padding: 25px;
-        border-radius: 15px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.3);
-        width: 90%;
-        max-width: 400px;
-        opacity: 0;
-        transition: all 0.3s ease;
-    }
-
-    .cart-box.active {
-        display: block;
-        opacity: 1;
-    }
-
-    .close-cart {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-      .cart-box {
-        position: fixed;
-        top: 50%;
-        left: 70%;
-        transform: translate(-50%,-50%);
-        right: 20px;
-        z-index: 1000;
-        background: white;
-        padding: 25px;
-        border-radius: 15px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        width: 60%;
-        max-width: 400px;
-        max-height: 80vh;
-        overflow-y: auto;
-        backdrop-filter: blur(5px);
-        transition: all 0.3s ease;
-    }
-
-    .cart-item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 5px 0;
-    }
-    .quantity-control {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
         #intro{
             background-color: #f0f0f0;
             color: black;
@@ -147,6 +68,9 @@
         }
         #services{
           border-style:inset;
+        }
+        #publications{
+          background-color: #FF99CC;
         }
      </style>
 </head>
@@ -977,83 +901,9 @@
 
 
 <!--publications-->
-<section class="faq section-padding">
-     <div class="container my-5">
-    <h2>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pdfSection">
-            Available eBooks 📚
-        </button>
-    </h2>
-    
-    <div class="collapse" id="pdfSection">
-        <div class="card card-body">
-            <div class="row">
-                <!-- PDF 1 -->
-                <div class="col-md-6 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Python Programming Guide</h5>
-                            <p class="text-muted">25,000 UGX</p>
-                            <button class="btn btn-success add-to-cart" data-book="Python Programming Guide">
-                                Add to Cart
-                            </button>
-                            <a href="python-guide.pdf" download class="btn btn-outline-primary">
-                                Download Sample
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- PDF 2 -->
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Web Development Basics</h5>
-                            <p class="text-muted">25,000 UGX</p>
-                            <button class="btn btn-success add-to-cart" data-book="Web Development Basics">
-                                Add to Cart
-                            </button>
-                            <a href="web-basics.pdf" download class="btn btn-outline-primary">
-                                Download Sample
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Cart -->
-<div class="cart-box">
-    <h5>Shopping Cart 🛒</h5>
-    <div id="cart-items"></div>
-    <p>Total: <span id="cart-total">0</span> UGX</p>
-    <button class="btn btn-warning btn-sm" onclick="completePurchase()">Complete Purchase</button>
-</div>
-
-<!-- Payment Modal -->
-<div class="modal fade" id="paymentModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Mobile Money Payment</h5>
-                <button class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <p>Total Amount: <span id="payment-amount"></span> UGX</p>
-                <div class="mb-3">
-                    <label>Mobile Money Number</label>
-                    <input type="tel" class="form-control" placeholder="Enter phone number">
-                </div>
-                <button class="btn btn-success">Confirm Payment</button>
-            </div>
-        </div>
-    </div>
-</div>
+<section class="faq section-padding" id="publications">
+  <strong><a href="cart.html">Click to purchase eBooks</a></strong><br>
 </section>
-
-
 
 <!--contact me section-->
      <section class="contact section-padding pt-0" id="contact">
@@ -1119,68 +969,6 @@
      <script src="js/smoothscroll.js"></script>
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/custom.js"></script>
-     <script>
-      let cart = [];
-      const price = 25000;
-
-    // Cart functionality
-    document.querySelectorAll('.add-to-cart').forEach(button => {
-        button.addEventListener('click', () => {
-            const book = button.dataset.book;
-            const existing = cart.find(item => item.book === book);
-            
-            if(existing) {
-                existing.quantity++;
-            } else {
-                cart.push({ book, quantity: 1 });
-            }
-            updateCart();
-        });
-    });
-
-    function updateCart() {
-        const cartItems = document.getElementById('cart-items');
-        cartItems.innerHTML = '';
-        
-        cart.forEach(item => {
-            const div = document.createElement('div');
-            div.className = 'cart-item';
-            div.innerHTML = `
-                <span>${item.book}</span>
-                <div class="quantity-control">
-                    <button class="btn btn-sm btn-danger" onclick="adjustQuantity('${item.book}', -1)">-</button>
-                    <span>${item.quantity}</span>
-                    <button class="btn btn-sm btn-success" onclick="adjustQuantity('${item.book}', 1)">+</button>
-                </div>
-            `;
-            cartItems.appendChild(div);
-        });
-
-        document.getElementById('cart-total').textContent = 
-            cart.reduce((sum, item) => sum + (item.quantity * price), 0);
-    }
-
-    function adjustQuantity(book, change) {
-        const item = cart.find(i => i.book === book);
-        item.quantity += change;
-        
-        if(item.quantity < 1) {
-            cart = cart.filter(i => i.book !== book);
-        }
-        
-        updateCart();
-    }
-
-    function completePurchase() {
-        const total = cart.reduce((sum, item) => sum + (item.quantity * price), 0);
-        document.getElementById('payment-amount').textContent = total;
-        new bootstrap.Modal(document.getElementById('paymentModal')).show();
-    }
-    function toggleCart() {
-      const cartBox = document.getElementById('cartBox');
-      cartBox.classList.toggle('active');
-  }
-     </script>
 
 </body>
 </html>
