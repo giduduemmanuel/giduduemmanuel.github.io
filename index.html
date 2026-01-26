@@ -1,976 +1,822 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-     <title>Emmanuel's PortFolio</title>
-
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="Tooplate">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/all.min.css">
-     <link rel="stylesheet" href="css/owl.carousel.min.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/tooplate-emma-resume-style.css">
-
-     <style>
-
-        #intro{
-            background-color: #f0f0f0;
-            color: black;
-         }
-
-        #testimonials{
-            background-color: #ADD8E6;
-            color: black;
-        } 
-
-        #about{
-            background-color: #FF99CC;
-            color: black;
-        }  
-
-        #contact{
-            background-color: #32CD32;
-            color: black;
-        }      
-
-        #python{
-            background-color: #008000;
-            color: black;
-        }
-
-        #excel{
-            background-color: #FFC0CB;
-            color: black;
-        }
-        #downloads{
-            background-color: #8da506;
-            color: greenyellow;
-        }
-        #trainings{
-            background-color: #926ef7;
-            color: springgreen;
-        }
-        #youtube{
-            background-color: #ec74b6;
-            color: skyblue;
-        }
-        #row_section{
-          background-color:#ADD8E6;
-          border-style:groove;
-        }
-        #services{
-          border-style:inset;
-        }
-        #publications{
-          background-color: #FF99CC;
-        }
-     </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emmanuel Gidudu - IT Instructor, Python Developer & VBA Expert">
+    <title>Emmanuel Gidudu | IT Instructor & Software Developer</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
-
-    <!-- MENU BAR -->
-    <nav class="navbar navbar-expand-lg">
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient sticky-top shadow-sm">
         <div class="container">
-
-            <a class="navbar-brand" href="#">
-                #Emmanuel Gidudu#
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-code text-white me-2"></i>Emmanuel Gidudu
             </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a href="#intro" class="nav-link smoothScroll">Introduction</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link smoothScroll">About Me</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a href="#services" class="nav-link smoothScroll">Services</a>
-                  </li>
-
-                    <li class="nav-item">
-                        <a href="#testimonials" class="nav-link smoothScroll">Applications</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#youtube" class="nav-link smoothScroll">YouTube Videos</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a href="#trainings" class="nav-link smoothScroll">Video Training</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a href="#downloads" class="nav-link smoothScroll">Free Downloads</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                      <a href="#publications" class="nav-link smoothScroll">Publications</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link smoothScroll">Contact Me</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a href="#reportcard" class="nav-link smoothScroll">Your Report Card Manager</a>
-                  </li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
-
-                <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
-
-                <a href="mycv.pdf" class="custom-btn btn" download>Download CV</a>
-
-                </div>
             </div>
-
         </div>
     </nav>
 
-    <!-- section one -->
-    <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
-
-         <div class="container">
-            <div class="row">
-
-                  <div class="mx-auto col-lg-5 col-md-5 col-10">
-                      <img src="images/emmapic.png" class="img-fluid" alt="Emmanuel's pic goes here">
-                  </div>
-
-                   <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
-                        <div class="hero-text">
-
-                            <center><h1 class="hero-title">👋 Emmanuel, an IT Instructor, VBA & Python Developer</h1></center>
-
-                            <a href="#" class="email-link">
-                                giduduemma3@gmail.com
-                            </a>
-                          
-                        </div>
-                    </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="about section-padding" id="about">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-12">
-                    <h3 class="mb-4">This is Emmanuel's Resume</h3>
-
-                    <p>Emmanuel Gidudu is highly skilled IT instructor and python developer with extensive experience in teaching and developing innovative software solutions. Proficient in designing and delivering engaging training programs, mentoring students, and creating efficient Python code. Passionate about staying updated with the latest technologies and sharing knowldge with others </p>
-                    
-                    <hr style="width: 100;">
-
-                    <p><h2>Technical skills</h2></p>
-                    <p>Programming languages (Python, Bash, C, C++ and VBA)</p>
-                    <p>HTML, CSS</p>
-                    <p>Microsoft office suite </p>
-                    <p>System Administration</p>
-
-                    <hr style="width: 100;">
-
-                    <p><h2>Hobbies</h2></p>
-                    <li>Academics and Research</li>
-                    <li>Cyber Security</li>
-                    <li>Programming</li>
-                    <li>Artificial Intelligence</li>
-
-                    <hr style="width: 100;">
-
-                    <p><h2>Bio Information</h2></p>
-                    <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
-                        <li><strong>Full Name :</strong> Emmanuel Gidudu </li>
-
-                        <li><strong>Date of Birth:</strong> 15/ September/ 1997</li>
-
-                        <li><strong>Email:</strong>giduduemma3@gmail.com</li>
-                        <li><strong>Email:</strong>giduduemmanuel30@yahoo.com</li>
-
-                    </ul>
-                </div>
-                <div class="col-lg-5 mx-auto col-md-6 col-12">
-                  <hr style="width: 100;">
-                    <img src="images/emma.png" class="about-image img-fluid" alt="Emma screen">
-                </div>
-
-            </div>
-            <div class="row about-third">
-            	<div class="col-lg-4 col-md-4 col-12">
-                <hr style="width: 100;">
-                <h2>Teaching Experience</h2>
-                <p>IT Instructor at Children of the nations Uganda as the head of department for 2 (two) years.</p>
-                 <p>I have taught Microsoft suite applications, C, C++ and VBA</p>
-                  <p>Developed and implemented engaging training programs in Microsoft Excel, and Python</p>
-                   <p>Mentored students and provided guidance on projects</p>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-12">
-                  <hr style="width: 100;">
-                <h2>Development Experience</h2>
-                <p>• Design and established the user friendly lower secondary competence based curriculum report card system that had the capacity to process allow marks entry and report card processing.</p>
-                <p>• Design and established the user friendly primary school report card system that had the capacity to process allow marks entry and report card processing.</p>
-                <p>• Design and established the user friendly Advanced level report card system that had the capacity to process allow marks entry and report card processing.</p>
-                <p>• Data analysis application developed to offer insight on the UCE UNEB results.</p>
-                <p>• Designed the point of sale application with a user friendly interface helping the business community to manage small business activities.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-
-                  <hr style="width: 100;">
-
-                <h2>My profile</h2>
-                <p>Innovative, task driven professional with 3+ years of experience in software development across different sectors. Equipped with a record of success in consistently identifying gaps in education sector and crafting applications to enable schools to operate smoothly and as well touching other sectors line finance and planning. Innovating, creating databases and user interfaces, writing codes and testing software, and implementing new features basing on the user feedback.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center justify-content-center text-white">
+        <div class="container text-center">
+            <div class="hero-content">
+                <img src="https://via.placeholder.com/150" alt="Emmanuel Gidudu" class="rounded-circle mb-4 border-5 border-white shadow" width="150">
+                <h1 class="display-4 fw-bold mb-3">Hi, I'm Emmanuel Gidudu</h1>
+                <p class="lead mb-4">IT Instructor | Python Instructor | VBA Expert | Web Instrutor</p>
+                <p class="mb-5">Transforming ideas into innovative solutions with 4+ years of professional experience</p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="#contact" class="btn btn-light btn-lg fw-bold">Get In Touch</a>
+                    <a href="cv/TechnicalCV.pdf" class="btn btn-outline-light btn-lg fw-bold">Download CV</a>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-<!--services section-->
-<section class="faq section-padding" id="services">
-  <h2>Services</h2>
-  <div class="row about-third">
-    <!--these are inner columns-->
-    <div class="col-lg-4 col-md-4 col-12" id="row_section">
-      <strong>IT Education & Training </strong> 
-      <P>- Delivering comprehensive Python programming courses (beginner to advanced)</P>  
-      <P>- Teaching modern web development fundamentals (HTML/CSS, JavaScript, Bootstrap) </P>
-      <P>- Conducting Microsoft Excel mastery workshops (formulas, pivot tables, Power Query), Word processing, Presentations, & Access databases</P> 
-      <P>- Offering cybersecurity awareness training (phishing prevention, basic hardening)</P>  
-      <P>- Providing customized technical skill development programs</P>
-    </div>
-    <div class="col-lg-4 col-md-4 col-12">
-      <strong>Python Development</strong>  
-      <p>- Building web applications (Flask) with REST APIs </p> 
-      <p>- Creating automation scripts for data processing/file management</p>  
-      <p>- Developing data analysis solutions (Pandas, NumPy, Matplotlib)</p> 
-      <p>- Implementing AI/ML prototypes (TensorFlow/PyTorch basics)</p>  
-      <p>- Designing custom Excel-Python integration workflows</p> 
-    </div>
-    <div class="col-lg-4 col-md-4 col-12" id="row_section">
-      <strong>Excel & VBA Solutions</strong>  
-      <p>- Advanced spreadsheet automation using VBA macros</p> 
-      <p>- Complex financial modeling and data analysis systems</p>  
-      <p>- Custom dashboard creation with dynamic reporting</p> 
-      <p>- Excel-Office365 integration and Power BI basics</p>
-    </div>
-  </div>
-  <div class="row about-third">
-    <!--these are inner columns-->
-    <div class="col-lg-4 col-md-4 col-12">
-      <strong>Development Services</strong>   
-      <p>- Responsive frontend development (Bootstrap, JavaScript)</p> 
-      <p>- Lightweight backend systems (Python/Flask)</p>  
-      <p>- Basic web security implementation (HTTPS, sanitization)</p>  
-      <p>- Website maintenance and performance optimization</p> 
-    </div>
-    <div class="col-lg-4 col-md-4 col-12" id="row_section">
-      <strong>Cybersecurity Analysis</strong>  
-      <p>- Vulnerability assessments for small-medium businesses</p>  
-      <p>- Network security fundamentals implementation</p>  
-      <p>- Basic penetration testing</p>
-      <p>- Security policy development and compliance guidance</p>  
-      <p>- Incident response planning & digital forensics basics</p> 
-    </div>
-    <div class="col-lg-4 col-md-4 col-12">
-      <strong>Technical Support</strong> 
-      <p>- Cross-platform system troubleshooting (Windows/macOS/Linux)</p> 
-      <p>- Hardware/software configuration and optimization</p>  
-      <p>- Network setup and basic infrastructure management</p>  
-      <p>- Data recovery and backup strategy implementation</p> 
-    </div>
-  </div>
-  <div class="row about-third">
-    <!--these are inner columns-->
-    <div class="col-lg-4 col-md-4 col-12" id="row_section">
-      <strong>Additional Technical Skills</strong>  
-      <p>- Tools: Git, Wireshark, VirtualBox, Kali Linux</p>  
-      <p>- Databases: SQLite, MySQL, basic</p> 
-      <p>- IDEs: VS Code, Jupyter Notebooks</p>  
-      <p>- Certifications: Ongoing pursuit of CompTIA/Python Institute certs</p>
-    </div>
-    <div class="col-lg-4 col-md-4 col-12">
-      <strong>Commitment to Excellence</strong>  
-      <p>- Continuous learning through HackTheBox/CTF challenges</p>  
-      <p>- Agile development practices with documentation focus</p>  
-      <p>- Client-focused solution design with clear communication</p>  
-      <p>- Emphasis on secure coding and data protection</p>
-    </div>
-
-  </div>
-</section>
-
-
-<!--testimonial section-->
-     <section class="testimonials section-padding" id="testimonials">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-12">
-                        <h2 class="mb-5 text-center">Projects Developed</h2>
-
-                        <div class="owl-carousel owl-theme" id="testimonials-carousel">
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/lib.png" class="img-fluid" alt="library image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>School Library system</p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/schoolfees.png" class="img-fluid" alt="School fees image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>School Fees Management System.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/result.png" class="img-fluid" alt="Result system image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Result Analysis System</p>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/alevel.png" class="img-fluid" alt="Grading image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Advanced Level and Ordinary Level Grading System</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-               </div>
-          </div>
-     </section>
-<!--downloads section-->
-<section class="faq section-padding" id="downloads"> 
-  <div class="container">
-      
-      <div class="row">
-
-          <div class="col-lg-12 col-12">
-
-              <h2 class="mb-5">Downloads Here</h2>
-              <p>The team is working tirelessly to add downloads in this are soon</p>
-        </div>
-      </div>
-  </div>
-</section>
-<!--video trainings section-->
-<section class="faq section-padding" id="trainings"> 
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-12 col-12">
-              <h2 class="mb-5">Video Training Lessons Check Here</h2>
-              <h4>Python</h4>
-              <h4>Microsoft Excel</h4>
-              <h4>Java</h4>
-              <h4>Bash</h4>
-              <h4>Javascript, Html, CSS</h4>
-              <h4>Cyber-security</h4>
-              <h4>C,C++,C#</h4>
-              <h4>Microsoft Excel VBA</h4>
-        </div>
-      </div>
-  </div>
-</section>
-<!--report card system and marks entry-->
-<!--you tube videos section-->
-     <section class="faq section-padding" id="youtube"> 
-      <div class="container">
-          
-          <div class="row">
-
-              <div class="col-lg-12 col-12">
-
-                  <h2 class="mb-5">Check YouTube Videos Here</h2>
-                  <h6 class="mb-5">All my videos have been attached here...</h6>
-                  <div class="accordion" id="accordionExample">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            How to <strong>generate A'level grades</strong>
-                          </button>
-                        </h2>
-                      </div>
-
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <p>
-                            <a href="https://www.youtube.com/watch?v=RSfQ5_74y28&t=29s">Click here to view Video ... </a>
-                          </p>
-
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            How to create A'level <strong>marks entry and Report Card generation system</strong>?
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <p>
-                            <a href="https://www.youtube.com/watch?v=o5askJlPR5w&t=6092s">Click here to view the video ...</a>
-                          </p>
-
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="card">
-                      <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            How to create a Ribbon Tab and process images on report cards.</strong>
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <p>
-                            <a href="https://www.youtube.com/watch?v=yWQfykwrMUQ&t=45s">Click here to view video ...</a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                  <div class="card">
-                      <div class="card-header" id="headingFour">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            How to create a Primary school marks entry and report card system part all parts.
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <p>
-                            <a href="https://www.youtube.com/watch?v=jdwHFRfZYB4&t=19s">Click here to view video ...(Part 1)</a>
-                          </p>
-                          <p>
-                            <a href="https://www.youtube.com/watch?v=jgV0zB7oE24&t=27s">Click here to view video ...(Part 2)</a>
-                          </p>
-                        </div>
-                      </div>
-                  </div>
-
-                  <div class="card">
-                      <div class="card-header" id="headingFive">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            How to create a NLSC marks entry and Report card generation system
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <p>
-                            <a href="https://www.youtube.com/watch?v=fZGyc5Epdoo&t=2607s">Click to view video...(Part 1)</a>
-                          </p>
-                          <p>
-                            <a href="https://www.youtube.com/watch?v=DRUxiEyXjug&t=2s">Click to view video...(Part 2)</a>
-                          </p>
-                          <p>
-                            <a href="https://www.youtube.com/watch?v=QB6hsSZXrFs&t=5s">Click to view video...(Part 3)</a>
-                          </p>
-                          <p>
-                            <a href="https://www.youtube.com/watch?v=f16MLRl0rqI&t=3415s">Click to view video...(Part 4)</a>
-                          </p>
-                          <p>
-                            <a href="https://www.youtube.com/watch?v=fhlZGwZPDIY&t=1s">Click to view video...(Part 5)</a>
-                          </p>
-                        </div>
-                      </div>
-                  </div>
-                  <span class="faq-info-text">YouTube videos</strong></span>
-
-              </div>
-
-            </div><!-- col -->
-        </div><!-- row -->
-      </div><!-- container -->
-  </section>
-
-<!--python questions generally created here-->
-     <section class="faq section-padding" id="python">
-        
+    <!-- About Section -->
+    <section id="about" class="py-5 section-light">
         <div class="container">
+            <h2 class="section-title text-center mb-5">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-content">
+                        <h3 class="fw-bold text-gradient mb-3">Who I Am</h3>
+                        <p class="text-muted">Emmanuel Gidudu is a highly skilled IT instructor and Python instructor with extensive experience in teaching and developing innovative strategies to support learners become super developers and thinkers. Proficient in designing and delivering engaging training programs, mentoring students, and creating efficient code for learners to follow along.</p>
+                        <h4 class="fw-bold text-gradient mt-4 mb-3">Technical Skills</h4>
+                        <div class="skills-grid">
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">VBA</span>
+                            <span class="skill-badge">HTML/CSS</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">Machine Learning</span>
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">MicroSoft Excel</span>
+                            <span class="skill-badge">Bash Scripting</span>
+                            <span class="skill-badge">C/C++</span>
+                            <span class="skill-badge">Cyber-Security Awareness</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="stats-container">
+                        <div class="stat-box text-center p-4 mb-3 rounded">
+                            <h4 class="text-gradient fw-bold">4+</h4>
+                            <p class="text-muted mb-0">Years Experience</p>
+                        </div>
+                        <div class="stat-box text-center p-4 mb-3 rounded">
+                            <h4 class="text-gradient fw-bold">50+</h4>
+                            <p class="text-muted mb-0">Students Trained</p>
+                        </div>
+                        <div class="stat-box text-center p-4 mb-3 rounded">
+                            <h4 class="text-gradient fw-bold">25+</h4>
+                            <p class="text-muted mb-0">Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 section-dark">
+        <div class="container">
+            <h2 class="section-title text-center mb-5 text-white">Services & What I Teach</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">IT Education & Training</h4>
+                        <p class="text-muted mb-3">Comprehensive Python courses, web development, Excel mastery, and cybersecurity awareness training.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-python"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Python Development</h4>
+                        <p class="text-muted mb-3">Building web applications with Flask, automation scripts, data analysis solutions, and AI/ML prototypes.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Excel & VBA Solutions</h4>
+                        <p class="text-muted mb-3">Advanced spreadsheet automation, financial modeling, custom dashboards, and Power BI integration.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Web Development</h4>
+                        <p class="text-muted mb-3">Responsive frontend development with Bootstrap and JavaScript, lightweight backend systems with Python/Flask.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Cybersecurity Analysis</h4>
+                        <p class="text-muted mb-3">I am Learning the following: Vulnerability assessments, network security, basic penetration testing, and security policy development.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Technical Support</h4>
+                        <p class="text-muted mb-3">Cross-platform troubleshooting, hardware/software configuration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 section-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Portfolio</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <h4 class="fw-bold mb-2">School Library System</h4>
+                            <p class="text-muted mb-3">A complete library management system for schools with book tracking and user management.</p>
+                            <span class="badge bg-gradient">Python</span>
+                            <span class="badge bg-gradient">Database</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <h4 class="fw-bold mb-2">School Fees Management</h4>
+                            <p class="text-muted mb-3">Smart system for tracking and managing school fees collection and payments.</p>
+                            <span class="badge bg-gradient">VBA</span>
+                            <span class="badge bg-gradient">Excel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <h4 class="fw-bold mb-2">Result Analysis System</h4>
+                            <p class="text-muted mb-3">Data analysis application for UCE UNEB results with insights and visualization.</p>
+                            <span class="badge bg-gradient">Python</span>
+                            <span class="badge bg-gradient">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <h4 class="fw-bold mb-2">Report Card System</h4>
+                            <p class="text-muted mb-3">Automated grading system for Advanced and Ordinary Level with report generation.</p>
+                            <span class="badge bg-gradient">VBA</span>
+                            <span class="badge bg-gradient">Reports</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <h4 class="fw-bold mb-2">Point of Sale System</h4>
+                            <p class="text-muted mb-3">User-friendly POS application for small businesses with inventory tracking.</p>
+                            <span class="badge bg-gradient">Python</span>
+                            <span class="badge bg-gradient">POS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <h4 class="fw-bold mb-2">Report Card Manager</h4>
+                            <p class="text-muted mb-3">Your advanced report card management solution with automated processing.</p>
+                            <span class="badge bg-gradient">VBA</span>
+                            <span class="badge bg-gradient">Excel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5 section-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">My Courses</h2>
             
-            <div class="row">
-
-                <div class="col-lg-12 col-12">
-
-                    <h2 class="mb-5">Python Frequently Asked Questions</h2>
-
-                    <div class="accordion" id="accordionExample">
-                      <div class="card">
-                        <div class="card-header" id="headingOne">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              What is <strong>Python</strong>?
-                            </button>
-                          </h2>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Python is a high level, interpreted programming language.</p>
-
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-header" id="headingTwo">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              What are the advantages of using <strong>Python</strong>?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Easy to learn, simple syntax, versatile, large community, and extensive libraries.</p>
-
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-header" id="headingThree">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              What are the <strong>disadvantages of Python</strong>?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Slow performance, limited support for parallel processing, and not ideal for mobile app development</p>
-                          </div>
-                        </div>
-                      </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                              What is difference between <strong>Python 2 and Python 3</strong>?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Python 3 is the latest version,  with improvements in syntax, libraries, and performance. Python 2 is legacy</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              What is a <strong>virtual environment in Python</strong>?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>A virtual environment is a self contained directory with its own  Python interpreter and libraries.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              What is the difference between <strong>static and dynamic</strong> typing in Python?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Python is dynamically typed, meaning variable types are determined at runtime, not during compilation.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              What are some popular <strong>Python libraries</strong>?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p><strong>Numpy, Pandas, Flask, Django, scikit-learn, TensorFlow,</strong> and many others.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              What is the difference between a <strong>list and tupple</strong>?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Lists are <strong>mutable</strong>, tuples are <strong>immutable</strong>.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              What is the purpose of the self parameter in Python?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>self refers to <strong>instance</strong> of the class, used to access <strong>variables and methods</strong>.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              How do I create a class in <strong>Python</strong>?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Define a class using the class <strong>keyword, attributes, and methods</strong>.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              What is the difference between <strong>break and continue</strong> in Python?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>break exits the loop, continue skips to the next iteration.</p>
-                          </div>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <a href="#" class="custom-btn btn" download>Download Python Notes</a>
-                    <br>
-                    <br>
-
-                    <span class="faq-info-text">Python Questions</strong></span>
-
-                </div>
-
-           	 </div><!-- col -->
-        	</div><!-- row -->
-        </div><!-- container -->
-    </section>
-<!--excel questions -->
- <section class="faq section-padding" id="excel">
-        
-        <div class="container">
-            
-            <div class="row">
-
-                <div class="col-lg-12 col-12">
-
-                    <h2 class="mb-5">Microsoft Excel and VBA Frequently Asked Questions</h2>
-
-                    <div class="accordion" id="accordionExample">
-                      <div class="card">
-                        <div class="card-header" id="headingOne">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              What is the maximum number of <strong>rows and columns</strong> in Microsoft Excel?
-                            </button>
-                          </h2>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>A single Excel sheet has <strong>1,048,576</strong> columns and <strong>16,384</strong> rows</p>
-
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-header" id="headingTwo">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              How do I <strong>freeze panes</strong> in Excel?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Select the cell below the rows and to the right of the columns you want to freeze, then go to view >> Freeze Panes</p>
-
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-header" id="headingThree">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              What is the difference between a <strong>formula and a function</strong> in Excel?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>A formula is <strong>user-defined</strong> calculation, while a function is a <strong>pre-built</strong> calculation like SUM or AVERAGE</p>
-                          </div>
-                        </div>
-                      </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                              How do you create a <strong>pivot table</strong> in Excel?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Select the data range, go to <strong>Insert</strong>, PivotTable, and follow the wizard.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              What is the difference between relative  and absolute reference in Excel?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>A relative reference changes when copied, while an absolute reference remains the same.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              What is <strong>VBA</strong> in Excel?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Visual Basic for Applications, a programming language used to automate tasks and create macros.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              What is the difference between a <strong>sub-routine</strong> and a <strong>function</strong> in VBA?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>A sub-routine performs actions, while a function returns a value.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              How do I create a button to run a macro in Excel?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Go to <strong>Developer</strong >> Insert >> Buttton, assign the macro, and customize the button.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              What is the difference <strong>Early Binding</strong> and <strong>Late Binding</strong> in VBA?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Early Binding uses explicit object references, while Late Binding uses implicit references.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    </div>
-                    <br>
-                    <br>
-                    <a href="#" class="custom-btn btn" download>Download Microsoft Excel Notes</a>
-                    <br>
-                    <br>
-
-                    <span class="faq-info-text">Microsoft Excel Questions</strong></span>
-
-                </div>
-
-             </div><!-- col -->
-            </div><!-- row -->
-        </div><!-- container -->
-    </section>
-
-
-<!--publications-->
-<section class="faq section-padding" id="publications">
-  <h2>Publications</h2>
-  <hr style="width: 50;">
-  <strong><a href="cart.html">Click to purchase eBooks</a></strong><br>
-</section>
-
-<!--contact me section-->
-     <section class="contact section-padding pt-0" id="contact">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-6 col-md-6 col-12">
-            <form action="#" method="get" class="contact-form webform"  role="form">
-                
-                <div class="form-group d-flex flex-column-reverse">
-                    <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
-
-                    <label for="cf-name" class="webform-label">Full Name</label>
-                </div>
-
-                <div class="form-group d-flex flex-column-reverse">
-                    <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email">
-
-                    <label for="cf-email" class="webform-label">Your Email</label>
-                </div>
-
-                <div class="form-group d-flex flex-column-reverse">
-                    <textarea class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Your Message"></textarea>
-
-                    <label for="cf-message" class="webform-label">Message</label>
-                </div>
-
-                <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
-            </form>
-          </div>
-
-            <div class="mx-auto col-lg-4 col-md-6 col-12">
-                <h3 class="my-4 pt-4 pt-lg-0">Emmanuel Gidudu</h3>
-
-                <p class="mb-1">+256 786644368/ +256 757109427/ +256 759077426</p>
-
-                <p>
-                    <a href="mailto:giduduemma3@gmail.com">
-                        <strong>giduduemma3@gmail.com</strong>
-                    <i class="fas fa-arrow-right custom-icon"></i>
-                    </a>
-                </p>
-
-                <ul class="social-links mt-2">
-                    <li><a href="https://facebook.com/groups/849601073281222/" class="fab fa-facebook"></a></li>
-                    <li><a href="https://x.com/gidudu_emmanuel?t=CFZlQ7KUIC0xdbeNvXMZfg&s=09" rel="noopener" class="fab fa-twitter"></a></li>
-                    <li><a href="https://www.instagram.com/giduduemmanuel?igsh=OGQ5ZDc2ODk2ZA==" rel="noopener" class="fab fa-instagram"></a></li>
-                    <li><a href="https://www.linkedin.com/in/emma-gidudu-a9127320a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" rel="noopener" class="fab fa-linkedin"></a></li>
-                    <li><a href="https://youtube.com/@XLcollegeUg?si=MYpeXHZuherilUfJ" rel="noopener" class="fab fa-youtube"></a></li>
-                </ul>
-                
-              <p class="copyright-text mt-5 pt-3">Copyright &copy; 2025 Emmanuel Personal Page</p>
-                
-
+            <!-- Filter Buttons -->
+            <div class="course-filter-buttons text-center mb-5">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="programming">Programming</button>
+                <button class="filter-btn" data-filter="data">Data & Excel</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="security">Security & DevOps</button>
             </div>
 
-        </div>
-      </div>
-    </section>
-     <!-- SCRIPTS -->
-     <script src="js/jquery.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/custom.js"></script>
+            <div class="row g-4" id="courseContainer">
+                <div class="col-md-6 col-lg-4 course-item" data-category="programming">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Python Programming</h4>
+                        <p class="text-muted mb-3">Master Python from basics to advanced. Learn OOP, data structures, and algorithms.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-gradient btn-sm w-100">Join on Google Classroom</a>
+                    </div>
+                </div>
 
+                <div class="col-md-6 col-lg-4 course-item" data-category="data">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Excel Mastery</h4>
+                        <p class="text-muted mb-3">Advanced Excel techniques, formulas, pivot tables, and data visualization.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-gradient btn-sm w-100">Join on Google Classroom</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 course-item" data-category="data">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">SQL Fundamentals</h4>
+                        <p class="text-muted mb-3">Learn SQL queries, database design, and data manipulation.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-gradient btn-sm w-100">Join on Google Classroom</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 course-item" data-category="data">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Data Analysis</h4>
+                        <p class="text-muted mb-3">Analyze data, create insights, and visualize trends with Python and Excel.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-gradient btn-sm w-100">Join on Google Classroom</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 course-item" data-category="data">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">MySQL Database</h4>
+                        <p class="text-muted mb-3">Master MySQL for web applications, database management, and optimization.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-gradient btn-sm w-100">Join on Google Classroom</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 course-item" data-category="web">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">HTML & CSS</h4>
+                        <p class="text-muted mb-3">Create beautiful, responsive websites with modern HTML and CSS techniques.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-gradient btn-sm w-100">Join on Google Classroom</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 course-item" data-category="web">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">JavaScript</h4>
+                        <p class="text-muted mb-3">Build interactive web applications with vanilla JavaScript and modern frameworks.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-gradient btn-sm w-100">Join on Google Classroom</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 course-item" data-category="programming">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Machine Learning</h4>
+                        <p class="text-muted mb-3">Learn ML algorithms, neural networks, and AI applications with Python.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-gradient btn-sm w-100">Join on Google Classroom</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 course-item" data-category="security">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Cybersecurity</h4>
+                        <p class="text-muted mb-3">Network security, ethical hacking, and protection against cyber threats.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-gradient btn-sm w-100">Join on Google Classroom</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 course-item" data-category="security">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Bash Scripting</h4>
+                        <p class="text-muted mb-3">Master shell scripting, automation, and Linux command-line tools.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-gradient btn-sm w-100">Join on Google Classroom</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 course-item" data-category="programming">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-window-restore"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">PySide6 GUI</h4>
+                        <p class="text-muted mb-3">Create desktop applications with PySide6 and PyQt frameworks.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-gradient btn-sm w-100">Join on Google Classroom</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 pt-5 text-center border-top">
+                <h4 class="fw-bold mb-4">More Content Available on YouTube</h4>
+                <p class="mb-4 text-muted">Subscribe to my YouTube channel for free tutorials, tips, and coding walkthroughs.</p>
+                <a href="https://www.youtube.com/@EmmanuelGidudu-k3t" target="_blank" class="btn btn-gradient btn-lg fw-bold">
+                    <i class="fab fa-youtube me-2"></i>Visit YouTube Channel
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Courses Section -->
+    <section id="projects" class="py-5 section-dark">
+        <div class="container">
+            <h2 class="section-title text-center mb-5 text-white">Project-Based Courses</h2>
+            <p class="text-center text-white-50 mb-5">Learn by building real-world projects with hands-on experience</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-course-card">
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">E-Commerce Website</h4>
+                        <p class="mb-3">Build a complete online store with Python, Flask, and MySQL. Learn payment integration and user management.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-outline-gradient btn-sm w-100">Enroll Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-course-card">
+                        <div class="project-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Inventory Management System</h4>
+                        <p class="mb-3">Create a complete inventory system using Excel VBA and Database. Perfect for retail and warehousing.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-outline-gradient btn-sm w-100">Enroll Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-course-card">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Business Analytics Dashboard</h4>
+                        <p class="mb-3">Design professional dashboards using Excel, Power BI, and Python for data-driven decisions.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-outline-gradient btn-sm w-100">Enroll Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-course-card">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">AI Chatbot Development</h4>
+                        <p class="mb-3">Build intelligent chatbots using Python, NLP, and Machine Learning for real-world applications.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-outline-gradient btn-sm w-100">Enroll Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-course-card">
+                        <div class="project-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Desktop App with PySide6</h4>
+                        <p class="mb-3">Develop cross-platform desktop applications with Python and PySide6 GUI framework.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-outline-gradient btn-sm w-100">Enroll Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-course-card">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Network Security Audit</h4>
+                        <p class="mb-3">Learn to perform security audits, penetration testing, and vulnerability assessments on networks.</p>
+                        <a href="https://classroom.google.com" target="_blank" class="btn btn-outline-gradient btn-sm w-100">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5 section-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Latest Blog Posts</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card">
+                        <div class="blog-date">Jan 26, 2026</div>
+                        <h4 class="fw-bold mb-3">Getting Started with Python in 2026</h4>
+                        <p class="text-muted mb-3">Explore the latest Python features and best practices for beginners and professionals.</p>
+                        <div class="blog-tags mb-3">
+                            <span class="blog-tag">Python</span>
+                            <span class="blog-tag">Tutorial</span>
+                        </div>
+                        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right ms-2"></i></a>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card">
+                        <div class="blog-date">Jan 20, 2026</div>
+                        <h4 class="fw-bold mb-3">Mastering Excel for Data Analysis</h4>
+                        <p class="text-muted mb-3">Advanced Excel techniques that will transform you into a data analysis expert.</p>
+                        <div class="blog-tags mb-3">
+                            <span class="blog-tag">Excel</span>
+                            <span class="blog-tag">Data</span>
+                        </div>
+                        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right ms-2"></i></a>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card">
+                        <div class="blog-date">Jan 15, 2026</div>
+                        <h4 class="fw-bold mb-3">Web Development Trends 2026</h4>
+                        <p class="text-muted mb-3">The top technologies and frameworks developers should learn this year.</p>
+                        <div class="blog-tags mb-3">
+                            <span class="blog-tag">Web Dev</span>
+                            <span class="blog-tag">Trends</span>
+                        </div>
+                        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right ms-2"></i></a>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card">
+                        <div class="blog-date">Jan 10, 2026</div>
+                        <h4 class="fw-bold mb-3">Introduction to Machine Learning</h4>
+                        <p class="text-muted mb-3">A beginner-friendly guide to understanding AI and machine learning concepts.</p>
+                        <div class="blog-tags mb-3">
+                            <span class="blog-tag">AI/ML</span>
+                            <span class="blog-tag">Guide</span>
+                        </div>
+                        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right ms-2"></i></a>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card">
+                        <div class="blog-date">Jan 5, 2026</div>
+                        <h4 class="fw-bold mb-3">Cybersecurity Best Practices</h4>
+                        <p class="text-muted mb-3">Essential security tips and tricks to protect yourself online and offline.</p>
+                        <div class="blog-tags mb-3">
+                            <span class="blog-tag">Security</span>
+                            <span class="blog-tag">Tips</span>
+                        </div>
+                        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right ms-2"></i></a>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card">
+                        <div class="blog-date">Dec 28, 2025</div>
+                        <h4 class="fw-bold mb-3">Linux Commands for Developers</h4>
+                        <p class="text-muted mb-3">Master essential Linux and Bash commands every developer should know.</p>
+                        <div class="blog-tags mb-3">
+                            <span class="blog-tag">Linux</span>
+                            <span class="blog-tag">DevOps</span>
+                        </div>
+                        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right ms-2"></i></a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 section-dark">
+        <div class="container">
+            <h2 class="section-title text-center mb-5 text-white">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-section mb-5">
+                    <h4 class="text-white fw-bold mb-4">
+                        <i class="fas fa-book me-2 text-gradient"></i>Courses & Learning
+                    </h4>
+                    <div class="accordion accordion-flush" id="courseFaq">
+                        <div class="accordion-item bg-transparent border-bottom border-secondary">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-white fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#courseFaq1">
+                                    How long does it take to complete a course?
+                                </button>
+                            </h2>
+                            <div id="courseFaq1" class="accordion-collapse collapse" data-bs-parent="#courseFaq">
+                                <div class="accordion-body text-white-50">
+                                    Most courses take 4-12 weeks depending on your pace and prior experience. You can work through lessons at your own speed and access all materials indefinitely.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom border-secondary">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-white fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#courseFaq2">
+                                    Do I get a certificate after completing a course?
+                                </button>
+                            </h2>
+                            <div id="courseFaq2" class="accordion-collapse collapse" data-bs-parent="#courseFaq">
+                                <div class="accordion-body text-white-50">
+                                    Yes! Upon completion of any course, you'll receive a certificate of completion that you can share on LinkedIn and include in your portfolio.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom border-secondary">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-white fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#courseFaq3">
+                                    Can I take multiple courses at once?
+                                </button>
+                            </h2>
+                            <div id="courseFaq3" class="accordion-collapse collapse" data-bs-parent="#courseFaq">
+                                <div class="accordion-body text-white-50">
+                                    Absolutely! Many students take 2-3 courses simultaneously. You have full access to all course materials whenever you need them.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-section mb-5">
+                    <h4 class="text-white fw-bold mb-4">
+                        <i class="fas fa-dollar-sign me-2 text-gradient"></i>Pricing & Payment
+                    </h4>
+                    <div class="accordion accordion-flush" id="pricingFaq">
+                        <div class="accordion-item bg-transparent border-bottom border-secondary">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-white fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#pricingFaq1">
+                                    What are your pricing options?
+                                </button>
+                            </h2>
+                            <div id="pricingFaq1" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                                <div class="accordion-body text-white-50">
+                                    Course pricing varies from $29 to $199 depending on the course length and content. We also offer bundle discounts for multiple courses.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom border-secondary">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-white fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#pricingFaq2">
+                                    Is there a money-back guarantee?
+                                </button>
+                            </h2>
+                            <div id="pricingFaq2" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                                <div class="accordion-body text-white-50">
+                                    Yes! We offer a 30-day money-back guarantee if you're not satisfied with the course for any reason.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom border-secondary">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-white fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#pricingFaq3">
+                                    Do you offer group discounts?
+                                </button>
+                            </h2>
+                            <div id="pricingFaq3" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
+                                <div class="accordion-body text-white-50">
+                                    Yes! We offer special pricing for groups of 5 or more. Contact us for custom quotes and bulk licensing.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h4 class="text-white fw-bold mb-4">
+                        <i class="fas fa-headset me-2 text-gradient"></i>Support & Technical
+                    </h4>
+                    <div class="accordion accordion-flush" id="supportFaq">
+                        <div class="accordion-item bg-transparent border-bottom border-secondary">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-white fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#supportFaq1">
+                                    What if I need help with a course?
+                                </button>
+                            </h2>
+                            <div id="supportFaq1" class="accordion-collapse collapse" data-bs-parent="#supportFaq">
+                                <div class="accordion-body text-white-50">
+                                    You can access 24/7 support through our Discord community, email support, and live Q&A sessions every week.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom border-secondary">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-white fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#supportFaq2">
+                                    Are the courses updated regularly?
+                                </button>
+                            </h2>
+                            <div id="supportFaq2" class="accordion-collapse collapse" data-bs-parent="#supportFaq">
+                                <div class="accordion-body text-white-50">
+                                    Yes! All courses are regularly updated with new content, latest technologies, and additional resources to keep the material current.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-bottom border-secondary">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-white fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#supportFaq3">
+                                    Can I download the course materials?
+                                </button>
+                            </h2>
+                            <div id="supportFaq3" class="accordion-collapse collapse" data-bs-parent="#supportFaq">
+                                <div class="accordion-body text-white-50">
+                                    Yes! You can download video lectures, code files, and resources for offline viewing and reference.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 section-dark">
+        <div class="container">
+            <h2 class="section-title text-center mb-5 text-white">Testimonials</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-4">"Emmanuel is an exceptional instructor with deep technical knowledge. His teaching approach makes complex concepts easy to understand."</p>
+                        <div class="testimonial-author">
+                            <strong>Sarah Okwera</strong>
+                            <p class="text-muted small mb-0">Student, Python Course</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-4">"The report card system Emmanuel developed has transformed how we manage grades. It's efficient and user-friendly."</p>
+                        <div class="testimonial-author">
+                            <strong>John Mukasa</strong>
+                            <p class="text-muted small mb-0">School Administrator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-4">"Professional, reliable, and delivers quality work. Emmanuel exceeded our expectations with the POS system."</p>
+                        <div class="testimonial-author">
+                            <strong>Grace Nasimiyu</strong>
+                            <p class="text-muted small mb-0">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 section-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Get In Touch</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-box p-5 rounded">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-bold">Your Name</label>
+                                <input type="text" class="form-control form-control-lg" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">Email Address</label>
+                                <input type="email" class="form-control form-control-lg" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label fw-bold">Subject</label>
+                                <input type="text" class="form-control form-control-lg" id="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-bold">Message</label>
+                                <textarea class="form-control form-control-lg" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gradient btn-lg w-100 fw-bold">Send Message</button>
+                        </form>
+                        <div class="mt-5 pt-5 border-top">
+                            <h4 class="fw-bold mb-4 text-center">Contact Information</h4>
+                            <div class="row text-center">
+                                <div class="col-md-6 mb-3">
+                                    <p><i class="fas fa-envelope text-primary me-2"></i><strong>Email</strong></p>
+                                    <p><a href="mailto:giduduemma3@gmail.com" class="text-decoration-none text-muted">giduduemma3@gmail.com</a></p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <p><i class="fas fa-phone text-primary me-2"></i><strong>WhatsApp</strong></p>
+                                    <p><a href="https://wa.me/256700000000" class="text-decoration-none text-muted">+256 786 644 368</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient py-4 text-white text-center">
+        <div class="container">
+            <div class="social-links mb-3">
+                <a href="https://www.youtube.com/@EmmanuelGidudu-k3t" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="www.linkedin.com/in/emmanuel-gidudu-a9127320a" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/giduduemmanuel" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/gidudu_emmanuel" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2026 Emmanuel Gidudu. All rights reserved.</p>
+            <p class="text-white-50 small mt-2">Designed with <i class="fas fa-heart text-danger"></i> for excellence</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
